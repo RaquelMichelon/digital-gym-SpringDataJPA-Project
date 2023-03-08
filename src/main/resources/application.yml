@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/academia?useTimeZone=true&serverTimezone=UTC&useLegacyData
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+#to create db: psql -U postgres postgres;
+#create database academia;
+#exit;
+#psql -U postgres academia;
+

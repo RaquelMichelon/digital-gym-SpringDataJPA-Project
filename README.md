@@ -37,6 +37,11 @@
     <li>Postman</li>
 </ul>
 
+<h2>🛠 ER Diagram</h2>
+![](diagramER)
+
+<h2>🛠 Backend Flux</h2>
+Client <--> Controller <--> Service <--> Repository <--> PostgreSQL
 
 <h2><a href="https://strn.com.br/artigos/2018/12/11/todas-as-anota%C3%A7%C3%B5es-do-jpa-anota%C3%A7%C3%B5es-de-mapeamento/"> Anotações de Mapeamento </a></h2>
 
@@ -80,7 +85,6 @@ Indica qual é o lado inverso ou não dominante da relação.
     <li><a href="https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.repositories">Spring Data JPA - Reference Documentation</a></li>
 </ul>
 
-
 <h2> 🤝 Contribuindo </h2>
 
 Este repositório foi criado para fins de estudo, então contribua com ele.
@@ -88,14 +92,10 @@ Se te ajudei de alguma forma, ficarei feliz em saber. E caso você conheça algu
 
 Se possível:
 
-⭐️  Star o projeto
+⭐️ Star o projeto
 
 🐛 Encontrar e relatar issues
 
-------------
+---
 
 Disponibilizado com ♥ por [cami-la](https://www.linkedin.com/in/cami-la/ "cami-la").
-
-
-
-
