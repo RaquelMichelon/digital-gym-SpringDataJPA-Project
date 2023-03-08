@@ -28,6 +28,8 @@ public interface IAlunoService {
    */
   List<Aluno> getAll();
 
+  List<Aluno> getAll(String dataDeNascimento);
+
   /**
    * Atualiza o Aluno.
    * @param id - id do Aluno que será atualizado.
@@ -43,5 +45,10 @@ public interface IAlunoService {
    */
   void delete(Long id);
 
+  /**
+   *
+   * @param id id do aluno que será recuperada a lista de avaliações
+   * @return uma lista com todas as avaliações do aluno de acordo com o Id
+   */
     List<AvaliacaoFisica> getAllAvaliacaoFisicaId(Long id);
 }

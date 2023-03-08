@@ -16,7 +16,7 @@ import java.util.List;
 public class AvaliacaoFisicaImpl implements IAvaliacaoFisicaService {
 
     @Autowired
-    private AvaliacaoFisicaRepository repository;
+    private AvaliacaoFisicaRepository avaliacaoFisicaRepository;
 
     @Autowired
     private AlunoRepository alunoRepository;
@@ -25,11 +25,12 @@ public class AvaliacaoFisicaImpl implements IAvaliacaoFisicaService {
     public AvaliacaoFisica create(AvaliacaoFisicaForm form) {
         AvaliacaoFisica avaliacaoFisica = new AvaliacaoFisica();
         Aluno aluno = alunoRepository.findById(form.getAlunoId()).get();
+
         avaliacaoFisica.setAluno(aluno);
         avaliacaoFisica.setPeso(form.getPeso());
         avaliacaoFisica.setAltura(form.getAltura());
 
-        return repository.save(avaliacaoFisica);
+        return avaliacaoFisicaRepository.save(avaliacaoFisica);
     }
 
     @Override
@@ -39,7 +40,8 @@ public class AvaliacaoFisicaImpl implements IAvaliacaoFisicaService {
 
     @Override
     public List<AvaliacaoFisica> getAll() {
-        return null;
+
+        return avaliacaoFisicaRepository.findAll();
     }
 
     @Override
