@@ -7,10 +7,12 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-
+    properties:
+      hibernate.format_sql: true
 
 #to create db: psql -U postgres postgres;
 #create database academia;
 #exit;
 #psql -U postgres academia;
+# \dt
 
